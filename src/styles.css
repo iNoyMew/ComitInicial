@@ -1,0 +1,67 @@
+.App {
+    font-family: sans-serif;
+    text-align: center;
+  }
+  
+  .bg-color-black {
+    background-color: black;
+    color: white;
+  }
+  
+  .txt-larger {
+    font-size: 20pt;
+  }
+  
+  h4 {
+    text-decoration: underline;
+  }
+  
+  .card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 15px;
+    width: 250px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    margin: 10px;
+  }
+  
+  .users {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+  
+  .texto {
+    font-size: large;
+    color: rgb(6, 6, 170);
+    text-shadow: 2cap;
+  }
+  
+  .botaoCalcular {
+    background-color: #4CAF50; /* Verde agradável */
+    color: white; /* Cor do texto em branco */
+    font-size: 16px; /* Tamanho de fonte */
+    font-weight: bold; /* Deixar a fonte em negrito */
+    padding: 12px 24px; /* Espaçamento interno (altura e largura) */
+    border-radius: 8px; /* Bordas arredondadas */
+    border: none; /* Remover a borda padrão */
+    cursor: pointer; /* Mostrar o cursor de clique */
+    transition: background-color 0.3s, transform 0.2s; /* Transições suaves */
+    margin: 10px;
+}
+
+.botaoCalcular:hover {
+    background-color: #45a049; /* Cor mais escura quando o mouse passa sobre o botão */
+    transform: scale(1.05); /* Um leve aumento no tamanho do botão para efeito visual */
+}
+
+.botaoCalcular:focus {
+    outline: none; /* Remover a borda padrão de foco */
+    box-shadow: 0 0 0 4px rgba(72, 155, 72, 0.5); /* Sombra sutil para o foco */
+}
+
+.botaoCalcular:active {
+    background-color: #3e8e41; /* Cor mais escura quando o botão é pressionado */
+    transform: scale(0.94); /* Botão encolhe levemente ao ser clicado */
+}
