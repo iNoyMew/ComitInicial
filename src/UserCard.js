@@ -7,8 +7,9 @@ const UserCard  = ({ user }) => {
     card: {
       border: "1px solid #ccc",
       borderRadius: "8px",
-      padding: "20px",
-      width: "250px",
+      padding: "40px",
+      width: "330px",
+      height:"400px",
       boxShadow: "2px 2px 10px rgba(0, 0, 0, 0.1)",
       textAlign: "left",
       margin: "10px",

@@ -9,6 +9,7 @@ import Calculadora from "./Calculadora"
 import Button from "./Button";
 import Card from "./Card"
 import Feedback from "./Feedback";
+import Imagem from "./Imagem";
 
 export default function App() {
   return (
@@ -21,6 +22,7 @@ export default function App() {
       <Card />
       <Calculadora />
       <Feedback />
+      <Imagem />
     </div>
   );
 }
