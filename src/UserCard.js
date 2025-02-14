@@ -2,7 +2,7 @@ import react from "react";
 
 const isAdmin = (admin) => (admin ? <i>Sim</i> : <i>Não</i>);
 
-const UserCard = ({ user }) => {
+const UserCard  = ({ user }) => {
   const styles = {
     card: {
       border: "1px solid #ccc",
