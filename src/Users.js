@@ -7,7 +7,7 @@ export default function Users() {
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    fetch("https://api.npoint.io/93ca752ec96d86449ded")
+    fetch("https://api.npoint.io/7058aeb17e466381a731")
       .then((response) => {
         if (!response.ok) {
           throw new Error("Erro ao buscar os dados");

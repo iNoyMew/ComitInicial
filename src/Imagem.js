@@ -1,8 +1,9 @@
 import React from 'react';
-import imagem from './imagemTeste.png';
 
-const img = () => {
-    return <img src={imagem} alt="Imagem Teste" width="100px"/>
-};
 
-export default img;
+
+const Imagem = ({ src, style }) => {
+    return <img src={src} alt="Imagem" style={style} />;
+  };
+  
+  export default Imagem;

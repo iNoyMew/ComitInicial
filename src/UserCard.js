@@ -1,4 +1,7 @@
-import react from "react";
+import React from "react";
+import Imagem from "./Imagem";
+import imagemTeste from  "../src/assets/imagemTeste.png";
+import outraImg from "../src/assets/outraImg.png";
 
 const isAdmin = (admin) => (admin ? <i>Sim</i> : <i>Não</i>);
 
@@ -14,8 +17,19 @@ const UserCard  = ({ user }) => {
       textAlign: "left",
       margin: "10px",
       backgroundColor: user.admin ? "red" : "",
+
+    },
+    imagem: {
+      width: "120px",
+      height: "100px",
+      borderRadius: "10%",
+      overflow: "hidden",
+      marginTop:"10px",
+      marginBottom: "20px",
     },
   };
+
+  const imagemUsuario = user.foto === "imagemTeste.png" ? imagemTeste : outraImg;
 
   return (
     <div style={styles.card} /*className="card"*/>
@@ -24,6 +38,7 @@ const UserCard  = ({ user }) => {
       <h4>Profissão:{user.profissao}</h4>
       <h4>Cidade:{user.cidade}</h4>
       <h4>Admin: {isAdmin(user.admin)}</h4>
+      <Imagem user={user} style={styles.imagem} src={imagemUsuario}/>
     </div>
   );
 };
