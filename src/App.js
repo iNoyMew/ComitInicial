@@ -17,6 +17,8 @@ export default function App() {
       <InputNome />
       <Counter />
       <Users />
+      <Button outline="false" color="primary" title="Clique aqui"/>
+      <Card />
       <Calculadora />
       <Feedback />
     </div>
